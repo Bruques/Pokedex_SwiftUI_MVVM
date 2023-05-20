@@ -9,14 +9,15 @@ import SwiftUI
 
 struct PokemonListView: View {
     @StateObject var viewModel: PokemonListViewModel
+    @State var searchText = ""
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                
+            }
+            .searchable(text: $searchText)
+            .navigationTitle("Pokedex")
         }
-        .padding()
     }
 }
 

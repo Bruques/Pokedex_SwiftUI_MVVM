@@ -11,7 +11,7 @@ import SwiftUI
 struct Pokedex_SwiftUI_MVVMApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PokemonListView(viewModel: PokemonListViewModel())
         }
     }
 }

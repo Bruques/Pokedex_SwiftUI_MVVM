@@ -8,6 +8,13 @@
 import Foundation
 
 class PokemonListViewModel: ObservableObject {
+    var service = Service()
     
+    init() {
+        self.fetchPokemonsList()
+    }
     
+    private func fetchPokemonsList() {
+        
+    }
 }

@@ -14,7 +14,11 @@ struct PokemonListView: View {
         NavigationView {
             List {
                 ForEach(viewModel.pokemons) { pokemon in
-                    NavigationLink(pokemon.name, destination: Text("Detalhes do pokemon: \(pokemon.name)"))
+                    HStack {
+                        Circle()
+                            .frame(width: 75, height: 75)
+                        NavigationLink(pokemon.name, destination: Text("Detalhes do pokemon: \(pokemon.name)"))
+                    }
                 }
                 .padding()
             }

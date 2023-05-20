@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "011A08F8-4E13-475B-8531-B54BB0480BC3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70EC386D-79EE-4E32-BA92-AC83BA3BCBCE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokedex_SwiftUI_MVVM/PokemonListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "70EC386D-79EE-4E32-BA92-AC83BA3BCBCE - f0c590056188723"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Pokedex_SwiftUI_MVVM.PokemonEntry&gt;, Foundation.UUID, SwiftUI.Text&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0 in Pokedex_SwiftUI_MVVM.PokemonListView.body.getter : some"
+                  moduleName = "Pokedex_SwiftUI_MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/Pokedex_SwiftUI_MVVM/Pokedex_SwiftUI_MVVM/PokemonListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "70EC386D-79EE-4E32-BA92-AC83BA3BCBCE - 427c2043dfb4aab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Pokedex_SwiftUI_MVVM.PokemonEntry) -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Pokedex_SwiftUI_MVVM.PokemonEntry&gt;, Foundation.UUID, SwiftUI.Text&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0 in Pokedex_SwiftUI_MVVM.PokemonListView.body.getter : some"
+                  moduleName = "Pokedex_SwiftUI_MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/Pokedex_SwiftUI_MVVM/Pokedex_SwiftUI_MVVM/PokemonListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "901C32E5-38E2-4941-9975-60C5B48C606D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokedex_SwiftUI_MVVM/PokemonListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "901C32E5-38E2-4941-9975-60C5B48C606D - 54a5bce5a5dd6f6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokedex_SwiftUI_MVVM.PokemonListViewModel.__allocating_init() -&gt; Pokedex_SwiftUI_MVVM.PokemonListViewModel"
+                  moduleName = "Pokedex_SwiftUI_MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/Pokedex_SwiftUI_MVVM/Pokedex_SwiftUI_MVVM/PokemonListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "901C32E5-38E2-4941-9975-60C5B48C606D - 8f1757286ca9c260"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokedex_SwiftUI_MVVM.PokemonListViewModel.init() -&gt; Pokedex_SwiftUI_MVVM.PokemonListViewModel"
+                  moduleName = "Pokedex_SwiftUI_MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/Pokedex_SwiftUI_MVVM/Pokedex_SwiftUI_MVVM/PokemonListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D960B265-47CB-42D5-B713-8AAFAE270C82"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokedex_SwiftUI_MVVM/PokemonListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "fetchPokemonsList()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "D960B265-47CB-42D5-B713-8AAFAE270C82 - ef96f61ea737dcb1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokedex_SwiftUI_MVVM.PokemonListViewModel.fetchPokemonsList() -&gt; ()"
+                  moduleName = "Pokedex_SwiftUI_MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/Pokedex_SwiftUI_MVVM/Pokedex_SwiftUI_MVVM/PokemonListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "D960B265-47CB-42D5-B713-8AAFAE270C82 - 554fa3428a67c883"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Pokedex_SwiftUI_MVVM.PokemonEntry&gt;, Swift.Error&gt;) -&gt; () in Pokedex_SwiftUI_MVVM.PokemonListViewModel.fetchPokemonsList() -&gt; ()"
+                  moduleName = "Pokedex_SwiftUI_MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/Pokedex_SwiftUI_MVVM/Pokedex_SwiftUI_MVVM/PokemonListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B0DA5A6-F5FF-4B61-8B96-289968A6FF0B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokedex_SwiftUI_MVVM/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "fetchPokemonList(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5B0DA5A6-F5FF-4B61-8B96-289968A6FF0B - 2246bbef6b0ab6f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokedex_SwiftUI_MVVM.Service.fetchPokemonList(completion: (Swift.Result&lt;Swift.Array&lt;Pokedex_SwiftUI_MVVM.PokemonEntry&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Pokedex_SwiftUI_MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/Pokedex_SwiftUI_MVVM/Pokedex_SwiftUI_MVVM/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "320">
+               </Location>
+               <Location
+                  uuid = "5B0DA5A6-F5FF-4B61-8B96-289968A6FF0B - 2246bbef6b0ab6f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokedex_SwiftUI_MVVM.Service.fetchPokemonList(completion: (Swift.Result&lt;Swift.Array&lt;Pokedex_SwiftUI_MVVM.PokemonEntry&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Pokedex_SwiftUI_MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/Pokedex_SwiftUI_MVVM/Pokedex_SwiftUI_MVVM/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "5B0DA5A6-F5FF-4B61-8B96-289968A6FF0B - 2246bbef6b0ab6f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokedex_SwiftUI_MVVM.Service.fetchPokemonList(completion: (Swift.Result&lt;Swift.Array&lt;Pokedex_SwiftUI_MVVM.PokemonEntry&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Pokedex_SwiftUI_MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brunomarques/Documents/PersonalProjects/SwiftUI%20Projetcts/Pokedex_SwiftUI_MVVM/Pokedex_SwiftUI_MVVM/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74C9A5B4-28BA-4D7A-8223-8EA5CBDD018C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokedex_SwiftUI_MVVM/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetchPokemonList(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

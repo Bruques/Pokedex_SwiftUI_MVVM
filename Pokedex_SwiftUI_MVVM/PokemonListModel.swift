@@ -12,7 +12,7 @@ struct PokemonListModel: Codable {
 }
 
 struct PokemonEntry: Codable, Identifiable {
-    var id = UUID()
+    let id = UUID()
     let name: String
     let url: String
 }

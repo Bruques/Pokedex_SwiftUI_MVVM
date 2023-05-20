@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct PokemonListView: View {
-    @StateObject var viewModel: PokemonListViewModel
+    @StateObject var viewModel = PokemonListViewModel()
     @State var searchText = ""
     var body: some View {
         NavigationView {
             List {
-                
+                ForEach(viewModel.pokemons) { pokemon in
+                    NavigationLink(pokemon.name, destination: Text("Detalhes do pokemon: \(pokemon.name)"))
+                }
+                .padding()
             }
             .searchable(text: $searchText)
             .navigationTitle("Pokedex")
@@ -23,6 +26,6 @@ struct PokemonListView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonListView(viewModel: PokemonListViewModel())
+        PokemonListView()
     }
 }

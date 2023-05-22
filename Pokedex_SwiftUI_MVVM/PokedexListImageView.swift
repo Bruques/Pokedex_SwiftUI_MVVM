@@ -19,7 +19,7 @@ struct PokedexListImageView: View {
                 ProgressView()
             }
         } else {
-            Circle()
+            ProgressView()
         }
     }
 }

@@ -13,10 +13,10 @@ struct PokemonListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.pokemons) { pokemon in
+                ForEach(searchText == "" ? viewModel.pokemons : viewModel.pokemons.filter( {
+                    $0.name.contains(searchText.lowercased())
+                })) { pokemon in
                     HStack {
-//                        Circle()
-//                            .frame(width: 75, height: 75)
                         PokedexListImageView(viewModel: PokedexListImageViewModel(url: pokemon.url))
                         NavigationLink(pokemon.name, destination: Text("Detalhes do pokemon: \(pokemon.name)"))
                     }

@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct PokedexListImageView: View {
-    @StateObject var viewModel = PokedexListImageViewModel()
+    @StateObject var viewModel: PokedexListImageViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .onAppear() {
-                viewModel.getPokemonDetail(url: "https://pokeapi.co/api/v2/pokemon/1/")
+        if let imageURL = URL(string: viewModel.imageURL) {
+            AsyncImage(url: imageURL) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            } placeholder: {
+                ProgressView()
             }
+        } else {
+            Circle()
+        }
     }
 }
 
-struct PokedexListImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        PokedexListImageView()
-    }
-}

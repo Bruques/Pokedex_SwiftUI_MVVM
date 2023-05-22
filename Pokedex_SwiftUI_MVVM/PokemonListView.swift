@@ -15,8 +15,9 @@ struct PokemonListView: View {
             List {
                 ForEach(viewModel.pokemons) { pokemon in
                     HStack {
-                        Circle()
-                            .frame(width: 75, height: 75)
+//                        Circle()
+//                            .frame(width: 75, height: 75)
+                        PokedexListImageView(viewModel: PokedexListImageViewModel(url: pokemon.url))
                         NavigationLink(pokemon.name, destination: Text("Detalhes do pokemon: \(pokemon.name)"))
                     }
                 }

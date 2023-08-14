@@ -38,4 +38,23 @@ class Service {
         }
         task.resume()
     }
+    
+    func fetchPokemonDetail(url: String, completion: @escaping (PokemonSprites) -> Void) {
+        guard let url = URL(string: url) else { return }
+        
+        let request = URLRequest(url: url)
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let safeData = data else { return }
+            
+            do {
+                let decodedData = try JSONDecoder().decode(PokedexListImageModel.self, from: safeData)
+                completion(decodedData.sprites)
+            } catch {
+                print(error.localizedDescription)
+                return
+            }
+        }
+        task.resume()
+    }
 }

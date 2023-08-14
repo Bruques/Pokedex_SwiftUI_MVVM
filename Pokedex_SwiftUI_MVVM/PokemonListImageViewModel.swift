@@ -1,5 +1,5 @@
 //
-//  PokedexListImageViewModel.swift
+//  PokemonListImageViewModel.swift
 //  Pokedex_SwiftUI_MVVM
 //
 //  Created by Bruno Marques on 20/05/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PokedexListImageViewModel: ObservableObject {
+class PokemonListImageViewModel: ObservableObject {
     var url: String
     @Published var imageURL = ""
     var service = Service()
@@ -18,7 +18,10 @@ class PokedexListImageViewModel: ObservableObject {
     }
     func getPokemonDetail(url: String) {
         service.fetchPokemonDetail(url: url) { pokemonDetail in
-            self.imageURL = pokemonDetail.front_default
+            DispatchQueue.main.async {
+                self.imageURL = pokemonDetail.front_default
+            }
+            
         }
     }
 }

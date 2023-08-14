@@ -13,19 +13,36 @@ struct PokemonListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(searchText == "" ? viewModel.pokemons : viewModel.pokemons.filter( {
-                    $0.name.contains(searchText.lowercased())
-                })) { pokemon in
-                    HStack {
-                        PokedexListImageView(viewModel: PokedexListImageViewModel(url: pokemon.url))
-                        NavigationLink(pokemon.name, destination: Text("Detalhes do pokemon: \(pokemon.name)"))
-                    }
+                ForEach(getResearchPokemons()) { pokemon in
+                    listItem(pokemon)
                 }
-                .padding()
             }
             .searchable(text: $searchText)
             .navigationTitle("Pokedex")
         }
+    }
+}
+
+extension PokemonListView {
+    func listItem(_ pokemon: PokemonEntry) -> some View {
+        NavigationLink {
+            PokemonDetailView(pokemonEntry: pokemon)
+        } label: {
+            HStack {
+                PokemonListImageView(viewModel: PokemonListImageViewModel(url: pokemon.url ?? ""))
+                    .frame(width: 100, height: 100)
+                Text(pokemon.name?.capitalized ?? "Unknown")
+                Spacer()
+            }
+        }
+        
+    }
+    
+    func getResearchPokemons() -> [PokemonEntry] {
+        return searchText == "" ? viewModel.pokemons : viewModel.pokemons.filter({ pokemon in
+            guard let pokemonName = pokemon.name else { return false }
+            return pokemonName.contains(searchText.lowercased())
+        })
     }
 }
 

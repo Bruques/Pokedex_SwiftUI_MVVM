@@ -24,13 +24,20 @@ class PokemonDetailViewModel: ObservableObject {
                                          height: pokemon.height ?? 0,
                                          weight: pokemon.weight ?? 0,
                                          imageUrl: pokemon.sprites?.front_default ?? "",
-                                         types: pokemon.types?.compactMap { $0.type?.name } ?? [])
+                                         types: pokemon.types?.compactMap { $0.type?.name } ?? [],
+                                         id: pokemon.id ?? 0)
                 
                 DispatchQueue.main.async {
                     self.pokemon = newPokemon
                 }
             }
         }.resume()
+    }
+    
+    func getPokemonId() -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.minimumIntegerDigits = 3
+        return numberFormatter.string(from: NSNumber(value: pokemon?.id ?? 0)) ?? ""
     }
     
 }

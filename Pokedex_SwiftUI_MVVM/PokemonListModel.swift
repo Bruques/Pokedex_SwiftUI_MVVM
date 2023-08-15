@@ -21,6 +21,7 @@ struct PokemonEntry: Codable, Identifiable {
 
 struct PokemonDetails: Codable {
     let name: String?
+    let id: Int?
     let height, weight: Double?
     let sprites: PokemonDetailsSprites?
     let types: [PokemonDetailsTypes]?
@@ -43,4 +44,5 @@ struct Pokemon {
     let height, weight: Double
     let imageUrl: String
     let types: [String]
+    let id: Int
 }

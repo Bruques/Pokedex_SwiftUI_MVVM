@@ -16,17 +16,54 @@ struct PokemonDetailView: View {
     
     var body: some View {
         if let pokemon = viewModel.pokemon {
-            VStack {
+            ZStack {
+                VStack(spacing: 0) {
+                    ZStack {
+                        Color.red
+                            .cornerRadius(40)
+                            .edgesIgnoringSafeArea(.top)
+                        HStack {
+                            Text(viewModel.pokemon?.name.capitalized ?? "Unknown")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                                .bold()
+                            Spacer()
+                            Text("#\(viewModel.getPokemonId())")
+                                .foregroundColor(.white)
+                                .font(.title3)
+                                .bold()
+                        }
+                        .padding(.horizontal)
+                    }
+                        
+                    ZStack {
+                        Color.white
+                            
+                        VStack {
+                            HStack {
+                                ForEach(pokemon.types, id: \.self) { types in
+                                    Text(types)
+                                        .foregroundColor(.white)
+                                        .bold()
+                                        .padding(.horizontal)
+                                        .padding(.vertical, 8)
+                                        .background(
+                                            Capsule()
+                                        )
+                                }
+                            }
+                        }
+                        
+                    }
+                }
                 AsyncImage(url: URL(string: pokemon.imageUrl)) { image in
                     image
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 200, height: 200)
+                        .frame(width: 250, height: 250)
                 } placeholder: {
                     ProgressView()
                 }
-                
-                Text(viewModel.pokemon?.name ?? "Unknown")
             }
         } else {
             ProgressView()
